@@ -2,6 +2,7 @@ $(function() {
 
 const $body = $('body');
 
+
 $('<div></div>').addClass('container').prependTo($body);
 
 
@@ -27,5 +28,9 @@ createCol(1,2);
 createCol(2,3);
 
 
+const $col = $('.row div');
+$col.addClass('col').attr('id', 'value');
+
 
 });
+
