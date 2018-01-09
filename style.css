@@ -2,5 +2,9 @@
   background-color: yellow;
   width: 100px;
   height: 20px; }
+  .row .col {
+    background-color: forestgreen;
+    width: 80px;
+    height: 15px; }
 
 /*# sourceMappingURL=style.css.map */
