@@ -2,17 +2,17 @@ $(function() {
 
 const $body = $('body');
 
-$('<div></div>').addClass('container').prependTo($body);
+$('<div>').addClass('container').prependTo($body);
 
 const createRows = (rowsNum) => {
      for ( let i = 0; i < rowsNum; i++ ) {
-        $('<div></div>').addClass('row').appendTo('.container');
+        $('<div>').addClass('row').appendTo('.container');
     }
 };
 
 const createCol = (rowNum, colNum) => {
         for (let i = 0; i < colNum; i++) {
-            $('.row').eq(rowNum).append('<div><p></p></div>');
+            $('.row').eq(rowNum).append('<div><p>');
         }
     };
 
@@ -30,13 +30,13 @@ const $colInThirdRow = $row.eq(2).find('div');
 
 $paragraph.addClass('description');
 
-const addColResAndSize = ( scrRes, size ) => {
+const getClassForCol = ( scrRes, size ) => {
     return 'col-' + scrRes + '-' + size;
 };
 
-$colInFirstRow.addClass( addColResAndSize('sm', 4) );
-$colInSecondRow.addClass( addColResAndSize('xs', 6) );
-$colInThirdRow.addClass( addColResAndSize('md', 3) );
+$colInFirstRow.addClass( getClassForCol('sm', 4) );
+$colInSecondRow.addClass( getClassForCol('xs', 6) );
+$colInThirdRow.addClass( getClassForCol('md', 3) );
 
 $colInFirstRow.eq(0).attr('id', 'aaa')
 $colInFirstRow.eq(1).attr('id', 'ccc');
