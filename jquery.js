@@ -2,23 +2,17 @@ $(function() {
 
 const $body = $('body');
 
-
 $('<div></div>').addClass('container').prependTo($body);
-
-
 
 const createRows = (rowsNum) => {
     for ( let i = 0; i < rowsNum; i++ ) {
         $('<div></div>').addClass('row').appendTo('.container');
-
     }
 };
-
 
 const createCol = (rowNum, colNum) => {
         for (let i = 0; i < colNum; i++) {
             $('.row').eq(rowNum).append('<div><p>');
-
         }
     };
 
@@ -54,8 +48,7 @@ $colInSecondRow.eq(1).css('color', 'red');
 $colInThirdRow.eq(0).attr('data-product', '300');
 $colInThirdRow.eq(1).attr('data-product', '400');
 $colInThirdRow.eq(2).attr('data-product', '500');
-
-
+    
 $paragraph.eq(0).text('Jeden');
 $paragraph.eq(1).text('Dwa');
 $paragraph.eq(2).text('Trzy');
