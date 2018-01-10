@@ -27,9 +27,19 @@ createCol(0,3);
 createCol(1,2);
 createCol(2,3);
 
+const $row = $('.row');
+const $colInRow = $('.row div');
 
-const $col = $('.row div');
-$col.addClass('col').attr('id', 'value');
+
+
+
+
+const addColResAndSize = (scrRes, size) => {
+    return 'col-' + scrRes + '-' + size;
+}
+
+
+$colInRow.eq(5).addClass( addColResAndSize('md', 6) ).attr('id', 'value');
 
 
 });
