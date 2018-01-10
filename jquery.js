@@ -23,7 +23,7 @@ createCol(2,3);
 
 const $row = $('.row');
 const $colInRow = $('.row > div');
-const $paragraph = $colInRow.find('p');
+const $paragraph = $('.row > div > p');
 const $colInFirstRow = $row.eq(0).find('div');
 const $colInSecondRow = $row.eq(1).find('div');
 const $colInThirdRow = $row.eq(2).find('div');
